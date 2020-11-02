@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Battery status
+        </title>
+        <meta name="author" content="sirb alin cristian"/>
+        <meta name="description" content="battery alert"/>
+        <meta name="keywords" content="battery, alert, charging, discharging"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="./src/style.css"/>
+    </head>
+    <body>
+        <div id="root">
+            <span class="title">
+                Battery status
+            </span>
+            <img src="https://bit.ly/2TO1I9Y"
+                 class="battery-animation">
+            <button class="battery-inspect"
+                    onclick="inspect()">Inspect battery</button>
+            <span id="battery-details"></span>
+        </div>
+        <script type="text/javascript" src="./src/script.js"/></script>
+    </body>
+</html>
