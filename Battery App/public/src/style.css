@@ -4,6 +4,13 @@
 
 html, body {
     margin: 0;
+    background-color: royalblue;
+}
+
+@media only screen and (width:auto) {
+    html, body, #root {
+        height: auto;
+    }
 }
 
 .clearfix {
@@ -23,14 +30,67 @@ html, body {
     font-family: sans-serif;
     font-weight: bold;
     font-size: 20px;
-    color: #000;
+    color: #fff;
     margin: 50px;
 }
 
 .battery-animation {
-    width: 500px;
-    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin: 50px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    width: 300px;
+    height: 100px;
+    background-color: gray;
+}
+
+.min {
+    display: flex;
+    margin: 15px;
+    background-color: red;
+    border-radius: 25px;
+    height: 30px;
+    padding: 5px;
+}
+
+.medium {
+    display: flex;
+    margin: 15px;
+    background-color: yellow;
+    border-radius: 25px;
+    height: 30px;
+    padding: 5px;
+}
+
+.max {
+    display: flex;
+    margin: 15px;
+    background-color: yellowgreen;
+    border-radius: 25px;
+    height: 30px;
+    padding: 5px;
+}
+
+.max-stop {
+    display: flex;
+    margin: 15px;
+    background-color: green;
+    border-radius: 25px;
+    height: 30px;
+    padding: 5px;
+}
+
+.procent {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.button-animation {
+    display: flex;
+    flex-direction: row;
 }
 
 .battery-inspect {
@@ -41,6 +101,8 @@ html, body {
     font-family: sans-serif;
     font-weight: bold;
     margin: 50px;
+    width: auto;
+    height: 30px;
 }
 
 .battery-inspect:hover {

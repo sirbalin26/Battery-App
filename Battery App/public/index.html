@@ -4,9 +4,9 @@
         <title>
             Battery status
         </title>
-        <meta name="author" content="sirb alin cristian"/>
-        <meta name="description" content="battery alert"/>
-        <meta name="keywords" content="battery, alert, charging, discharging"/>
+        <meta name="author" content="Sirb Alin Cristian"/>
+        <meta name="description" content="battery status"/>
+        <meta name="keywords" content="battery, alert, status"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="./src/style.css"/>
@@ -16,10 +16,25 @@
             <span class="title">
                 Battery status
             </span>
-            <img src="https://bit.ly/2TO1I9Y"
-                 class="battery-animation">
-            <button class="battery-inspect"
-                    onclick="inspect()">Inspect battery</button>
+            <div class="battery-animation">
+                <div class="min">
+                    <span class="procent">30%</span>
+                </div>
+                <div class="medium">
+                    <span class="procent">60%</span>
+                </div>
+                <div class="max">
+                    <span class="procent">90%</span>
+                </div>
+                <div class="max-stop">
+                    <span class="procent">100%</span>
+                </div>
+            </div>
+            <div class="button-animation">
+                <button class="battery-inspect" onclick="inspect()">Inspect battery</button>
+                <button class="battery-inspect" onclick="healt()">Healt battery</button>
+                <button class="battery-inspect" onclick="capacity()">Capacity battery</button>
+            </div>
             <span id="battery-details"></span>
         </div>
         <script type="text/javascript" src="./src/script.js"/></script>
